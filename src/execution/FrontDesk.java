@@ -6,8 +6,16 @@
  * */
 package execution;
 
+import definitions.Book;
+
 public class FrontDesk {
     public static void main(String[] args) {
+        Book book = new Book();
+        System.out.println(
+                "Book Name: " + book.getBookName() + ", " +
+                        "Author Name: " + book.getAuthorName() + ", " +
+                        "ISBN Number: " + book.getIsbnNumber()
+        );
 
     }
 }
