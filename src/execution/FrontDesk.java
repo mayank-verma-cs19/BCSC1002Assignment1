@@ -12,11 +12,7 @@ public class FrontDesk {
     public static void main(String[] args) {
         Book book = new Book("The Way I Loved her", "Surjeet Dinda", "123456789012");
 
-        System.out.println(
-                "Book Name: " + book.getBookName() + ", " +
-                        "Author Name: " + book.getAuthorName() + ", " +
-                        "ISBN Number: " + book.getIsbnNumber()
-        );
+        System.out.println(book);
 
     }
 }
