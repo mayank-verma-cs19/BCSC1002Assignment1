@@ -11,6 +11,20 @@ public class Book {
     private String authorName;
     private String isbnNumber;
 
+    public Book() {
+        this.bookName = "";
+        this.authorName = "";
+        this.isbnNumber = "";
+    }
+
+    public Book(String bookName, String authorName, String isbnNumber) {
+        this.bookName = bookName;
+        this.authorName = authorName;
+        this.isbnNumber = isbnNumber;
+
+
+    }
+
     public String getBookName() {
         return bookName;
     }

@@ -10,10 +10,8 @@ import definitions.Book;
 
 public class FrontDesk {
     public static void main(String[] args) {
-        Book book = new Book();
-       book.setBookName("The Way I loved her");
-       book.setAuthorName("Surjeet Dinda");
-       book.setIsbnNumber("1234567890127");
+        Book book = new Book("The Way I Loved her", "Surjeet Dinda", "123456789012");
+
         System.out.println(
                 "Book Name: " + book.getBookName() + ", " +
                         "Author Name: " + book.getAuthorName() + ", " +
