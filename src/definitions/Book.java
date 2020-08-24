@@ -5,6 +5,7 @@
  *  File Name : Book.java
  * */
 package definitions;
+import java.util.Objects;
 
 public class Book {
     private String bookName;
@@ -54,5 +55,20 @@ public class Book {
                 "Book Name: %s , Author Name: %s , ISBN Number: %s",
                 getBookName(), getAuthorName(), getIsbnNumber()
         );
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Book)) return false;
+        Book book = (Book) o;
+        return getBookName().equals(book.getBookName()) &&
+                getAuthorName().equals(book.getAuthorName()) &&
+                getIsbnNumber().equals(book.getIsbnNumber());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getBookName(), getAuthorName(), getIsbnNumber());
     }
 }
