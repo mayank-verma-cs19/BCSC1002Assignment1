@@ -133,5 +133,14 @@ public class Student {
         System.out.println("You have sucessfully issued \"" + book + "\".");
     }
 
-
+    /**
+     * This method will return a previously issues book to the Library.
+     *
+     * @param book The name of the book student want to return.
+     */
+    public void doReturn(Book book) {
+        System.out.println(
+                "Thank you for returning \"" + book + "\" .Hope you learned something new."
+        );
+    }
 }
