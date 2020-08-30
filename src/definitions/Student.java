@@ -14,6 +14,33 @@ public class Student {
     private int numberOfBookIssued;
     private Book[] issuedBooks;
 
+    public Student(String firstName, String middlename, String lastName, long universityRollNumber, int numberOfBookIssued, Book[] issuedBooks) {
+        this.firstName = firstName;
+        this.middlename = middlename;
+        this.lastName = lastName;
+        this.universityRollNumber = universityRollNumber;
+        this.numberOfBookIssued = numberOfBookIssued;
+        this.issuedBooks = issuedBooks;
+    }
+
+    public Student() {
+    }
+
+    public Student(String firstName, String lastName, long universityRollNumber, int numberOfBookIssued, Book[] issuedBooks) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.universityRollNumber = universityRollNumber;
+        this.numberOfBookIssued = numberOfBookIssued;
+        this.issuedBooks = issuedBooks;
+    }
+
+    public Student(String firstName, long universityRollNumber, int numberOfBookIssued, Book[] issuedBooks) {
+        this.firstName = firstName;
+        this.universityRollNumber = universityRollNumber;
+        this.numberOfBookIssued = numberOfBookIssued;
+        this.issuedBooks = issuedBooks;
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -61,4 +88,5 @@ public class Student {
     public void setIssuedBooks(Book[] issuedBooks) {
         this.issuedBooks = issuedBooks;
     }
+
 }
