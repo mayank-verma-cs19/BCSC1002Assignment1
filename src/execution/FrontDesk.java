@@ -49,7 +49,12 @@ public class FrontDesk {
                     System.out.println("Enter the name of the book you want to return");
                     String returnBook = scanner.nextLine();
                     student.doReturn(returnBook);
+                case NO_OF_BOOK_ISSUED:
+                    student.showAllBooks();
+                    break;
+                default:
             }
-        } while (studentInput != 4);
+        }
+        while (studentInput != 4);
     }
 }
