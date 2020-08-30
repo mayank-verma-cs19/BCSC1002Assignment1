@@ -144,7 +144,7 @@ public class Student {
     }
 
     public void showAllBooks() {
-        issuedBooks = new Book[10];
+        issuedBooks = new Book[5];
         for (int i = 0; i < 10; i++) {
             System.out.println("Book" + (i + 1));
         }
