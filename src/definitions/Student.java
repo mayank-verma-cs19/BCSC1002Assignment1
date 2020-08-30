@@ -123,4 +123,15 @@ public class Student {
         result = 31 * result + Arrays.hashCode(getIssuedBooks());
         return result;
     }
+
+    /**
+     * This method will help the student to issue a book.
+     *
+     * @param book The name of the book that the student wants to issue.
+     */
+    public void doCheckout(Book book) {
+        System.out.println("You have sucessfully issued \"" + book + "\".");
+    }
+
+
 }
