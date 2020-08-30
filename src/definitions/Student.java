@@ -26,8 +26,7 @@ public class Student {
         this.issuedBooks = issuedBooks;
     }
 
-    public Student() {
-    }
+    public Student() { }
 
     public Student(String firstName, String lastName, long universityRollNumber, int numberOfBookIssued, Book[] issuedBooks) {
         this.firstName = firstName;
@@ -138,7 +137,7 @@ public class Student {
      *
      * @param book The name of the book student want to return.
      */
-    public void doReturn(Book book) {
+    public void doReturn(String book) {
         System.out.println(
                 "Thank you for returning \"" + book + "\" .Hope you learned something new."
         );

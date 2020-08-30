@@ -43,7 +43,12 @@ public class FrontDesk {
                     System.out.println("Enterthe ISBN Number of the book");
                     String isbnNumber = scanner.nextLine();
                     Book book = new Book(bookName, authorName, isbnNumber);
+                    student.doCheckout(book);
                     break;
+                case RETURN_A_BOOK:
+                    System.out.println("Enter the name of the book you want to return");
+                    String returnBook = scanner.nextLine();
+                    student.doReturn(returnBook);
             }
         } while (studentInput != 4);
     }
